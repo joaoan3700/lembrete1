@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager with Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Tarefas com Lembrete</h1>
+        <p>Adicione suas tarefas e receba uma notificação 15 minutos antes do prazo.</p>
+
+        <div class="task-input">
+            <input type="text" id="task" placeholder="Adicionar nova tarefa">
+            <input type="date" id="date">
+            <input type="time" id="time">
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+
+        <ul id="task-list">
+            <!-- As tarefas aparecerão aqui -->
+        </ul>
+
+        <p id="notification-permission" class="hidden">
+            Notificações estão desabilitadas. Habilite para receber lembretes.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
